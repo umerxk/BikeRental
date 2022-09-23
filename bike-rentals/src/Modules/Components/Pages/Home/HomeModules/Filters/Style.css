@@ -1,0 +1,11 @@
+.round-div{
+    height: 33px !important;
+    width: 33px !important;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.filters-parent{
+    margin-top: 15px;
+    min-height: 100vh;
+    background-color: #fff;
+}
