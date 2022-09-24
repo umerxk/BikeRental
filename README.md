@@ -3,7 +3,7 @@
 
 How to run ?
 - For both (frontend & backend) install node_modules by running npm install
-- user npm run dev on root to start the project
+- use npm run dev on root to start the project
 
 ## Auth Creds for manager
 
