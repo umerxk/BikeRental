@@ -138,6 +138,11 @@ const RegisterUser = AsyncHandler(async (req, res) => {
 });
 
 const UpdateUser = AsyncHandler(async (req, res) => {
+  if(req.body?.password){
+    const salt = await bcrypt.genSalt(10);
+    const hashPwd = await bcrypt.hash(req.body.password, salt);
+    req.body.password = hashPwd;
+  }
   const updatedUser = await User.findOneAndUpdate(
     { _id: req.params.id },
     { $set: req.body },

@@ -38,7 +38,7 @@ const UserForm = ({
         const validData = getValidData(formValues);
         await editUser(validData, dataForEdit._id);
         handleCloseModal();
-        AppMessages({ msg: "Bike Updated Sucessfully !", type: "success" });
+        AppMessages({ msg: "User Updated Sucessfully !", type: "success" });
         updateData();
       } else {
         delete formValues.confirmPassword;
