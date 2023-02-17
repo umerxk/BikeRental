@@ -196,7 +196,7 @@ const BikesList = React.memo(() => {
 
   return (
     <>
-      {isFromVisible() && allBikes?.length && (
+      {isFromVisible() && !!allBikes?.length && (
         <Row style={{ float: "right", marginTop: 18, gap: 20, fontSize: 20 }}>
           <p style={{ marginTop: -8, fontSize: 20 }}>View</p>
           <AppstoreOutlined
